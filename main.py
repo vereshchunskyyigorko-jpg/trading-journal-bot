@@ -137,4 +137,7 @@ app.add_handler(CallbackQueryHandler(menu_callback))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, save_notes))
 
 app.run_polling()
-if name == "main": main()
+Python
+
+if __ name__ == "main": 
+main()
