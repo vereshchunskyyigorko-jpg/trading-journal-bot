@@ -80,7 +80,7 @@ elif action == "recent":
         await query.message.reply_text("Поки угод немає.")
     else:
         text = "📋 Останні угоди:\n\n"
-        for date, asset, direction, result, notes in rows:
+[16.10.2026 14:11] Ігор Верещинський: for date, asset, direction, result, notes in rows:
             text += (
                 f"🗓 {date}\n{asset} | {direction} | {result}\n"
                 f"Нотатка: {notes or '-'}\n\n"
@@ -137,3 +137,4 @@ app.add_handler(CallbackQueryHandler(menu_callback))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, save_notes))
 
 app.run_polling()
+if name == "main": main()
